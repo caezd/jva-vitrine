@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                         fill
                         className="fixed inset-0 w-full h-full object-cover -z-10 opacity-80"
                     />
-                    <div className="mix-blend-exclusion opacity-40 absolute top-0 h-screen w-screen overflow-hidden">
+                    <div className="mix-blend-exclusion opacity-40 absolute top-0 h-screen w-screen overflow-hidden pointer-events-none">
                         <video
                             className="absolute top-1/2 left-1/2 w-auto h-auto -translate-x-1/2 -translate-y-1/2 min-h-screen min-w-screen object-cover z-0"
                             autoPlay
