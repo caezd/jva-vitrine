@@ -3,17 +3,18 @@ import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
     return (
-        <div className="relative mt-32">
+        <div className="relative sm:mt-32">
             <div className="flex flex-col gap-4">
-                <h2 className="text-4xl drop-shadow-lg font-nunito">
-                    « J'y vais accompagné » arrive
-                    <span className="text-9xl inline-flex mt-4">
+                <h2 className="text-2xl sm:text-4xl drop-shadow-lg font-nunito">
+                    « J'y vais accompagné » arrive
+                    <br />
+                    <span className="text-6xl sm:text-9xl inline-flex mt-4">
                         BIENT
                         <span className="relative">
                             Ô
                             <svg
                                 width="100"
-                                className="absolute top-20 -translate-y-1 left-1/2 -translate-x-1/2"
+                                className="absolute translate-y-[20%] top-1/2 left-1/2 -translate-x-1/2 w-full"
                                 viewBox="0 0 300 90"
                                 fill="none"
                             >
@@ -26,10 +27,11 @@ export default function Home() {
                         T !
                     </span>
                 </h2>
-                <h3 className="text-2xl">
+                <h3 className=" text-lg lg:text-2xl">
                     <a
                         href="http://www.taxiscoop-quebec.com/"
                         title="Taxi Coop Québec 5191"
+                        target="_blank"
                         className="border-b hover:italic"
                     >
                         Taxi Coop Québec 5191

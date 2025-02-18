@@ -8,18 +8,25 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
+import { Info } from "lucide-react";
 
 function KezakoModal(props) {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button
-                    variant="secondary"
-                    size="lg"
-                    className="rounded-full text-lg py-6 px-8"
-                >
-                    Qu'est-ce que c'est ?
-                </Button>
+                <div>
+                    <Button
+                        variant="secondary"
+                        size="lg"
+                        className="rounded-full text-lg py-6 px-8 lg:flex hidden"
+                    >
+                        Qu'est-ce que c'est ?
+                    </Button>
+                    <Info
+                        size={24}
+                        className="stroke-white lg:hidden bg-transparent color-white"
+                    />
+                </div>
             </DialogTrigger>
             <DialogContent className="max-w-screen-md">
                 <DialogHeader>

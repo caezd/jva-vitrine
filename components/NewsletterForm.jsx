@@ -70,8 +70,8 @@ const NewsletterForm = () => {
                         </div>
                     )}
                 </div>
-                <div className="flex justify-between items-center">
-                    <div className="flex gap-4 items-center">
+                <div className="flex justify-between items-center flex-col lg:flex-row gap-6">
+                    <div className="flex gap-4 items-center ">
                         <Checkbox
                             checked={terms}
                             id="terms"
