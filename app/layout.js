@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
                         <div className="order-2 lg:order-1">
                             © {new Date().getFullYear()}, tous droits réservés.
                         </div>
-                        <div className="flex gap-6 items-end">
+                        <div className="flex gap-6 items-end lg:order-2 order-1">
                             <div className="flex gap-2">
                                 Propulsé par
                                 <Image
