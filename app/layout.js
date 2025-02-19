@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#784fed] ${nunito.variable} overflow-hidden`}
             >
-                <div className="isolate overflow-y-auto overflow-x-hidden text-white/80">
+                <div className="isolate text-white/80">
                     <header className="relative top-0 z-50 w-full">
                         <nav className="flex flex-1 items-center justify-between p-6 xl:py-8">
                             <div className="flex-col items-center px-8">
