@@ -34,12 +34,13 @@ export default function RootLayout({ children }) {
                 <Image
                     alt="background image"
                     src={
-                        "https://images.unsplash.com/photo-1603306557434-284b08b2e0c2?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+                        "https://images.unsplash.com/photo-1603306557434-284b08b2e0c2?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2830"
                     }
                     fill
-                    className="fixed top-0 w-screen h-screen object-cover opacity-60"
+                    className="fixed top-0 w-screen h-screen object-cover opacity-40"
                 />
-                <div className="opacity-40 mix-blend-screen fixed top-0 h-screen w-screen overflow-hidden pointer-events-none">
+                {/* &q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply */}
+                <div className="opacity-40 mix-blend-darken fixed top-0 h-screen w-screen overflow-hidden pointer-events-none">
                     <video
                         className="absolute top-1/2 left-1/2 w-auto h-auto -translate-x-1/2 -translate-y-1/2 min-h-screen min-w-screen object-cover z-0"
                         autoPlay
@@ -49,7 +50,7 @@ export default function RootLayout({ children }) {
                         <source src="file.mp4" type="video/mp4" />
                     </video>
                 </div>
-                <div className="isolate text-white/80 min-h-screen flex-col">
+                <div className="isolate text-white/90 min-h-screen flex-col bg-gradient-to-r from-[#9C71F0] to-[transparent]">
                     <header className="relative top-0 z-50 w-full">
                         <nav className="flex flex-1 items-center justify-between p-6 xl:py-8">
                             <div className="flex-col items-center px-8">
