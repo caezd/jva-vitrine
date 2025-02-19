@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
 
                     <div
                         className="
-                    max-w-2xl md:pb-40 mx-12"
+                    max-w-2xl pb-12 md:pb-40 mx-12"
                     >
                         {children}
                     </div>
