@@ -29,17 +29,17 @@ export default function RootLayout({ children }) {
     return (
         <html lang="fr">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#5603AD] ${nunito.variable} overflow-hidden`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#784fed] ${nunito.variable} overflow-hidden`}
             >
-                <div className="h-screen w-screen isolate overflow-y-auto overflow-x-hidden text-white/80">
-                    <header className="relative lg:absolute top-0 z-50 w-full">
+                <div className="isolate overflow-y-auto overflow-x-hidden text-white/80">
+                    <header className="relative top-0 z-50 w-full">
                         <nav className="flex flex-1 items-center justify-between p-6 xl:py-8">
                             <div className="flex-col items-center px-8">
                                 <Image
                                     src="logo-jva.svg"
                                     alt="5191"
-                                    width="120"
-                                    height="120"
+                                    width="100"
+                                    height="100"
                                 />
                             </div>
                             <div className="px-8">
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                         fill
                         className="fixed inset-0 w-full h-full object-cover -z-10 opacity-80"
                     />
-                    <div className="mix-blend-exclusion opacity-40 absolute top-0 h-screen w-screen overflow-hidden pointer-events-none">
+                    <div className="mix-blend-luminosity opacity-20 absolute top-0 h-screen w-screen overflow-hidden pointer-events-none">
                         <video
                             className="absolute top-1/2 left-1/2 w-auto h-auto -translate-x-1/2 -translate-y-1/2 min-h-screen min-w-screen object-cover z-0"
                             autoPlay
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
 
                     <div
                         className="
-                    max-w-2xl pt-32 pb-56 mx-12"
+                    max-w-2xl pb-56 mx-12"
                     >
                         {children}
                     </div>

@@ -1,0 +1,2 @@
+-   refaire layout relatif
+-   mettre un drawer responsive pour mobile
