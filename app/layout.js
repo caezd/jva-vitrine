@@ -37,9 +37,20 @@ export default function RootLayout({ children }) {
                         "https://images.unsplash.com/photo-1603306557434-284b08b2e0c2?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2830"
                     }
                     fill
-                    className="fixed top-0 w-screen h-screen object-cover opacity-40"
+                    className="fixed top-0 w-screen h-screen object-cover opacity-0"
                 />
-                {/* &q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply */}
+
+                <Image
+                    alt="background image"
+                    src={"/accompagnement.jpg"}
+                    width={1920}
+                    height={1080}
+                    className="hidden sm:block fixed left-[10%] top-0 w-screen h-screen object-cover opacity-80 overflow-hidden grayscale-0 -scale-x-100"
+                    style={{
+                        maskImage:
+                            "linear-gradient(90deg, transparent 0%, #000 20%, #000 80%, transparent 100%)",
+                    }}
+                />
                 <div className="opacity-40 mix-blend-darken fixed top-0 h-screen w-screen overflow-hidden pointer-events-none">
                     <video
                         className="absolute top-1/2 left-1/2 w-auto h-auto -translate-x-1/2 -translate-y-1/2 min-h-screen min-w-screen object-cover z-0"
@@ -50,6 +61,8 @@ export default function RootLayout({ children }) {
                         <source src="file.mp4" type="video/mp4" />
                     </video>
                 </div>
+                {/* &q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply */}
+
                 <div className="isolate text-white/90 min-h-screen flex-col bg-gradient-to-r from-[#9C71F0] to-[transparent]">
                     <header className="relative top-0 z-50 w-full">
                         <nav className="flex flex-1 items-center justify-between p-6 xl:py-8">

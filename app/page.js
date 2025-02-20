@@ -37,8 +37,10 @@ export default function Home() {
                         Taxi Coop Québec 5191
                     </a>{" "}
                     est fier de préparer son tout nouveau service de transport
-                    et d'accompagnement pour les aînés.<br></br>
-                    Inscrivez-vous pour être informé de son lancement !
+                    et d'accompagnement pour les aînés.
+                    <br />
+                    <br />
+                    Lancement bientôt, inscrivez-vous pour rester informé !
                 </h3>
             </div>
             <div className="mt-12">
